@@ -2,15 +2,34 @@ $red: #F20D11;
 $blue: #222EDD;
 $favorite_color: #37C8BF;
 
+$header_border_color: black;
+$header_border_margin: 2px;
+$header_border_style: solid;
+
 $good_spacing: 5px;
+$nav_height: 100px;
+
+@mixin moveDownAndRight($down, $right){
+    margin-bottom: $down;
+    margin-left: $right;
+}
+
+@mixin centerContent(){
+    justify-content: center;
+    text-align: center;
+}
 
 .header {
     background-color: $red;
+    border: #{$header_border_style} #{$header_border_margin} #{$header_border_color};
     &__title {
         color: $blue;
+        @include moveDownAndRight(100px, 50px);
     }
     &__nav {
         background-color: $favorite_color;
+        height: $nav_height;
+        @include centerContent();
     }
     &__link {
         margin: $good_spacing;
