@@ -22,9 +22,12 @@ $nav_height: 100px;
 .header {
     background-color: $red;
     border: #{$header_border_style} #{$header_border_margin} #{$header_border_color};
-    &__title {
+    &__title--big {
         color: $blue;
         @include moveDownAndRight(100px, 50px);
+    }
+    &__title--small {
+        @include moveDownAndRight(10px, 50px);
     }
     &__nav {
         background-color: $favorite_color;

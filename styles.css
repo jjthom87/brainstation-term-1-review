@@ -2,9 +2,13 @@
   background-color: #F20D11;
   border: solid 2px black;
 }
-.header__title {
+.header__title--big {
   color: #222EDD;
   margin-bottom: 100px;
+  margin-left: 50px;
+}
+.header__title--small {
+  margin-bottom: 10px;
   margin-left: 50px;
 }
 .header__nav {
