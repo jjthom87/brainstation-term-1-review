@@ -1,0 +1,18 @@
+$red: #F20D11;
+$blue: #222EDD;
+$favorite_color: #37C8BF;
+
+$good_spacing: 5px;
+
+.header {
+    background-color: $red;
+    &__title {
+        color: $blue;
+    }
+    &__nav {
+        background-color: $favorite_color;
+    }
+    &__link {
+        margin: $good_spacing;
+    }
+};
